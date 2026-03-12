@@ -9,7 +9,7 @@
 :root {
   --bg: #0f0f0f;
   --surface: #1a1a1a;
-  --accent: #f5a623;
+  --accent: #c8a84b;
   --text: #e8e8e8;
   --muted: #888;
   --max-width: 900px;
@@ -47,7 +47,7 @@ nav {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .logo {
@@ -101,13 +101,31 @@ h2 {
 
 /* Hero */
 #hero {
-  text-align: center;
-  padding: 8rem 0;
+  padding: 3rem 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text h1 {
+  margin-bottom: 0.5rem;
 }
 
 #hero p {
   font-size: 1.2rem;
   color: var(--muted);
+}
+
+.hero-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
 
 /* Games Grid */
